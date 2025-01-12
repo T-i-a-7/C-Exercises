@@ -24,10 +24,10 @@ This repository represents an effort to organize these exercises in one place.
 By making them public, I hope they can serve as a resource for others who are learning or practicing C programming.
 Whether you are a student, a self-learner, or someone looking to brush up on C, this archive aims to provide useful exercises for a wide range of programming topics.
 
-## Exercises Usage
+## 💻 Exercises Usage
 > [!IMPORTANT]
-> The `main` branch of this repository is intended as a personal archive of my exercises. Please do NOT modify this branch directly.
-> For more details, see the [Contributing and Feedback](#💬-contributing-and-feedback) section.
+> The `main` branch of this repository is intended as a personal archive of my exercises. Please do **NOT** modify this branch directly.
+> For more details, see the [Contributing and Feedback](#-contributing-and-feedback) section.
 
 To use the exercises in this repository, you can either explore and review my solutions or fork the repository and modify the exercises to practice on your own.
 
@@ -47,30 +47,39 @@ To use the exercises in this repository, you can either explore and review my so
 Feel free to customize and modify the exercises to fit your learning goals!
 
 ## 📂 Exercises Structure
-The exercises are organized by date, and they become progressively more challenging as the dates increase. If you are new to C programming, it is recommended to start with the older exercises.
+The exercises are organized by date, and they become progressively more challenging as the dates increase.
+> [!TIP]
+> If you are new to C programming, it is recommended to start with the older exercises.
 
 Each folder contains one or more exercises. The task description, prompt, or problem statement is written at the beginning of each `.c` file as a comment to provide context for the exercise.
 
-## 💬 Contributing and Feedback
-We value your feedback! If you encounter any issues or have suggestions for improvements, feel free to open an issue in the repository. Additionally, you are welcome to contribute by submitting pull requests following our contribution guidelines.
+## 🤝 Contributing and Feedback
+> [!IMPORTANT]
+> As mentioned in the [Exercises Usage](#-exercises-usage) section, the `main` branch of this repository is intended as a personal archive of my exercises. Please do **NOT** modify this branch directly.
+> For more details, see the contribution guidelines below.
 
-## 🤝 Contribution Guidelines
-Contributions are welcome! To contribute:
+### How to Contribute
+- **Bug**: If you find a bug (not an error in my exercise itself, but an issue in the execution of the code), open a new [Issue](https://github.com/T-i-a-7/C-Exercises/issues/new) and describe it.
+- **Error**: If you find and error and know how to fix it, follow the [Generic Procedure](#generic-procedure) below.
+- **Incomplete Exercise**: If you want to complete an incomplete exercise, follow the [Generic Procedure](#generic-procedure) below.
+- **Improvement Suggestion**: If you have a better version for an exercise, open a new discussion so we can collaborate and potentially integrate your version into the `main` branch.
+- **General Suggestions**: For other types of suggestions, open a new [Issue](https://github.com/T-i-a-7/C-Exercises/issues/new) and describe your idea.
+
+### Generic Procedure
 1. Fork the repository.
-2. Create a new branch for your feature or fix:
+2. Create a new branch for your fix:
    ```bash
-   git checkout -b feature-name
+   git checkout -b fix-name
    ```
 3. Commit your changes and push to your forked repository:
    ```bash
-   git commit -m "Add new exercise: topic-name"
-   git push origin feature-name
+   git commit -m "Fix error: description"
+   git push origin fix-name
    ```
-4. Open a Pull Request (PR) with a description of your changes.
-
+4. Open a [Pull Request](https://github.com/T-i-a-7/C-Exercises/pulls) (PR) with a clear description of your changes.
 Please follow the coding style and naming conventions used in the repository.
 
----
+If you want to contribute in any other way that is not mentioned here, please ask for guidance via the Issues or Discussions tab before proceeding.
 
 ## 📄 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
