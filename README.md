@@ -1,4 +1,4 @@
-![Placeholder Banner](https://placehold.co/1200x340?text=C+Exercises+-+Archive&font=roboto)
+![Placeholder Banner](https://placehold.co/1200x340?text=Banner+Placeholder&font=roboto)
 
 <h1 align="center">
    C Exercises - Archive
@@ -86,4 +86,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-Happy coding! If you find this repository helpful, consider giving it a ⭐ to show your support!
+If you find this repository helpful, please consider giving it a ⭐ to show your support.
+
+Thank you for visiting and enjoy your coding journey!
+
