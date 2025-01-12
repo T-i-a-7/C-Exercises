@@ -19,61 +19,40 @@
 
 ## 📖 Introduction
 The **C Exercises - Archive** is a personal collection of programming exercises in the C language that I have completed over the years during my Programming classes.
-Initially, these exercises were scattered across various locations: some written on paper, others saved in the cloud, and many stored locally on my computer.
-
 This repository represents an effort to organize these exercises in one place.
+
 By making them public, I hope they can serve as a resource for others who are learning or practicing C programming.
 Whether you are a student, a self-learner, or someone looking to brush up on C, this archive aims to provide useful exercises for a wide range of programming topics.
 
-## 💬 Contributing and Feedback
-We value your feedback! If you encounter any issues or have suggestions for improvements, feel free to open an issue in the repository. Additionally, you are welcome to contribute by submitting pull requests following our contribution guidelines.
+## Exercises Usage
+> [!IMPORTANT]
+> The `main` branch of this repository is intended as a personal archive of my exercises. Please do NOT modify this branch directly.
+> For more details, see the [Contributing and Feedback](#💬-contributing-and-feedback) section.
 
-## 🛠️ Usage
-To use the exercises in this repository, follow these steps:
-1. Clone the repository to your local machine:
+To use the exercises in this repository, you can either explore and review my solutions or fork the repository and modify the exercises to practice on your own.
+
+### Steps to Fork the Repository:
+1. Open the GitHub page for this repository.
+2. Click on the "Fork" button in the top right corner.
+3. Once the fork is created, clone your forked repository to your local machine:
    ```bash
    git clone https://github.com/yourusername/C-Exercises.git
    ```
-2. Browse the folders and choose the exercise you want to practice.
-3. Compile the `.c` files using your preferred C compiler (e.g., `gcc`).
-4. Run the program and check the results.
-
-Feel free to modify the exercises or write your own solutions to enhance your learning experience.
-
-## 🚀 Getting Started
-To get started with the exercises:
-1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/yourusername/C-Exercises.git
-   ```
-2. Navigate to the cloned directory:
+4. Navigate to the cloned directory:
    ```bash
    cd C-Exercises
    ```
-3. Compile the C programs using your preferred compiler (e.g., `gcc`):
-   ```bash
-   gcc filename.c -o outputfile
-   ```
-4. Run the compiled program:
-   ```bash
-   ./outputfile
-   ```
+5. Browse the folders and choose the exercise you want to practice.
 
----
+Feel free to customize and modify the exercises to fit your learning goals!
 
 ## 📂 Exercises Structure
-The exercises are organized into folders based on categories:
-- **Basics**: Simple programs to get familiar with syntax and structure.
-- **Control Flow**: Exercises involving loops, conditionals, and branching.
-- **Functions**: Problems to practice creating and using functions.
-- **Pointers and Memory**: Hands-on practice with pointers and dynamic memory allocation.
-- **File Handling**: Reading and writing files in C.
+The exercises are organized by date, and they become progressively more challenging as the dates increase. If you are new to C programming, it is recommended to start with the older exercises.
 
-Each folder contains multiple exercises, each with:
-- A `README.md` file explaining the problem statement.
-- A `.c` file containing the sample solution (if applicable).
+Each folder contains one or more exercises. The task description, prompt, or problem statement is written at the beginning of each `.c` file as a comment to provide context for the exercise.
 
----
+## 💬 Contributing and Feedback
+We value your feedback! If you encounter any issues or have suggestions for improvements, feel free to open an issue in the repository. Additionally, you are welcome to contribute by submitting pull requests following our contribution guidelines.
 
 ## 🤝 Contribution Guidelines
 Contributions are welcome! To contribute:
