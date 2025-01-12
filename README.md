@@ -1,6 +1,6 @@
 # C Exercises - Archive
 
-![Placeholder Banner](https://placehold.co/800x200?text=C+Exercises+Archive&font=montserrat)
+![Placeholder Banner](https://placehold.co/827x339?text=📂+C+Exercises+-+Archive&font=roboto)
 
 Welcome to the **C Exercises - Archive**! This repository contains a curated collection of exercises in the C programming language designed to help you practice, learn, and improve your coding skills.
 
