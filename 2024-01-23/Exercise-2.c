@@ -1,9 +1,11 @@
-//Acquisita una sequenza di caratteri che termina con il carattere #, trovare e visualizzare
-//a) il carattere minimo e quante volte compare,
-//b) il carattere massimo fra gli alfabetici maiuscoli e la prima occorrenza,
-//c) la percentuale dei caratteri numerici
-//d) quanti caratteri & compaiono.
-//Non si deve comprendere il carattere di fine sequenza nell'elaborazione.
+/*
+Acquisita una sequenza di caratteri che termina con il carattere #, trovare e visualizzare:
+1. Il carattere minimo e quante volte compare
+2. Il carattere massimo fra gli alfabetici maiuscoli e la prima occorrenza
+3. La percentuale dei caratteri numerici
+4. Quanti caratteri "&" compaiono.
+Non si deve comprendere il carattere di fine sequenza nell'elaborazione.
+*/
 
 
 #include <stdio.h>
