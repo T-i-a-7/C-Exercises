@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-   <img src="https://img.shields.io/badge/Exercises-40%2B-87D3F8" alt="Number of Exercises">
+   <img src="https://img.shields.io/badge/Exercises-50%2B-87D3F8" alt="Number of Exercises">
    <img src="https://img.shields.io/badge/Difficulty-Medium-FFA500" alt="Difficulty Medium">
    <img src="https://img.shields.io/badge/Language-C-00599C" alt="Language C">
    <img src="https://img.shields.io/badge/License-MIT-green" alt="License MIT">
