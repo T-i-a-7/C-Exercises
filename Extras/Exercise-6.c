@@ -51,7 +51,13 @@ int controllo2(float a, float b, float c) {
 
 float calcoloArea(float a) {
     return ((sqrt(3)/4)*a*a);
-}
+}   
+
+void acquisizioneN(int *pN) {
+    do {
+        printf("Fornisci numero di valori: ");
+        scanf("%d", &*pN);
+    } while (*pN<=0);
 
 int main() {
     int choice;
@@ -101,7 +107,34 @@ int main() {
             }
         
             case 3: {
-        
+                float x, rif, sum=0, max;
+                int n, count=0, i=0, flag=0;
+
+                acquisizioneN(n);
+
+                do {
+                    printf("Fornisci riferimento: ");
+                    scanf("%f", &rif);
+                } while (rif<=0);
+
+                while (i<n) {
+                    do {
+                        printf("Fornisci valore %d: ", i+1);
+                        scanf("%f", &x);
+                    } while (x<=0);
+
+                    if (x<rif) {
+                        if (flag==0) {
+                            max = x;
+                            flag=1;
+                        } else if (max<x) {
+                           max=x;
+                        }
+                    }
+                    
+                    i++;
+                }
+                        
                 break;
             }
         
