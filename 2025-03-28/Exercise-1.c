@@ -34,9 +34,9 @@ struct Prodotto {
 struct Prodotto prodotti[10000];
 
 //funzioni
-void Codice (char *CodiceTemp[15]) {
+void Codice (char *CodiceTemp) {
     printf("Codice: ");
-    scanf("%s", *CodiceTemp);
+    scanf("%s", CodiceTemp);
 }
 
 float Prezzo () {
@@ -57,9 +57,9 @@ int Quantita () {
     return QuantitaTemp;
 }
 
-void Fornitore (char *FornitoreTemp[11]) {
+void Fornitore (char *FornitoreTemp) {
     printf("Fornitore: ");
-    scanf("%s", *FornitoreTemp);
+    scanf("%s", FornitoreTemp);
 }
 
 int main () {
@@ -76,15 +76,16 @@ int main () {
         
         switch (scelta) {
             case 1: {
-                Codice(&CodiceTemp);
+                Codice(CodiceTemp);
                 strcpy(prodotti[n].Codice, CodiceTemp);
                 do {
                     printf("Prezzo: ");
                     scanf("%f", &prodotti[n].Prezzo);
                 } while (prodotti[n].Prezzo<=0);
-                prodotti[n].Quantita=Quantita;
-                Fornitore(&FornitoreTemp);
+                prodotti[n].Quantita=Quantita();
+                Fornitore(FornitoreTemp);
                 strcpy(prodotti[n].Fornitore, FornitoreTemp);
+                n++;
 
                 break;
             }
@@ -107,14 +108,25 @@ int main () {
             }
     
             case 3: {
-                Codice(&CodiceTemp);
-                Prezzo(&PrezzoTemp);
-                Quantita(&QuantitaTemp);
+                int scelta2;
+                Codice(CodiceTemp);
+                Prezzo();
+                Quantita();
 
                 for (int i=0; i<n; i++) {
-                    if (prodotti[i].Codice==CodiceTemp) {
-                        prodotti[i].Prezzo=PrezzoTemp;
-                        prodotti[i].Quantita+=QuantitaTemp;
+                    if (strcmp(prodotti[i].Codice, CodiceTemp)==0) {
+                        printf("1. Sostituisci il prezzo.\n2. Incrementa la quantità.");
+                        do {
+                            do {
+                                printf("Scelta: ");
+                                scanf("%d", &scelta2);
+                            } while (scelta2<=0 || scelta2>2);
+                            if (scelta2==1) {
+                                prodotti[i].Prezzo=PrezzoTemp;
+                            } else if (scelta2==2) {
+                                prodotti[i].Quantita+=QuantitaTemp; 
+                            }
+                        } while (scelta2!=1 && scelta2!=2);
                     }
                 }
 
@@ -122,6 +134,17 @@ int main () {
             }
     
             case 4: {
+                Codice(CodiceTemp);
+
+                for (int i=0; i<n; i++) {
+                    if (strcmp(prodotti[i].Codice, CodiceTemp)==0) {
+                        if (prodotti[i].Quantita<10) {
+
+                        } else {
+                            printf("Quantità maggiore di 10.");
+                        }
+                    }
+                }
     
                 break;
             }
