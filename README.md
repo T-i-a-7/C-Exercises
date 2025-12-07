@@ -1,4 +1,3 @@
-![Placeholder Banner](https://placehold.co/1200x340?text=Banner+Placeholder&font=roboto)
 ![Banner](Banner.png)
 
 <h1 align="center">
