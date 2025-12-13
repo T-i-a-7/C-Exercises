@@ -1,0 +1,60 @@
+# =========================
+# C / Compiled binaries
+# =========================
+*.o
+*.out
+*.exe
+*.app
+*.dll
+*.so
+*.a
+
+# =========================
+# Debug files
+# =========================
+*.dSYM/
+*.gdb
+*.gdb_history
+vgcore.*
+core
+core.*
+
+# =========================
+# Build directories
+# =========================
+build/
+bin/
+dist/
+
+# =========================
+# Temporary / backup files
+# =========================
+*~
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# =========================
+# IDE / Editor files
+# =========================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# =========================
+# OS generated files
+# =========================
+*.desktop
+.Trash-*
+
+# =========================
+# CMake
+# =========================
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+compile_commands.json
