@@ -43,10 +43,6 @@ struct Passeggero *nuovo (struct Passeggero *head) {
     char cognome[16], nome[11], sesso;
     struct Passeggero *cur = head;
 
-    while (cur->next!=NULL && head!=NULL) {
-        cur = cur->next;
-    }
-
     printf("Cognome: ");
     scanf("%s", cognome);
     printf("Nome: ");
@@ -55,17 +51,54 @@ struct Passeggero *nuovo (struct Passeggero *head) {
         printf("Sesso: ");
         scanf(" %c", &sesso);
     } while (sesso!='M'&&sesso!='F');
+    
+    if (head==NULL) {
+        head = malloc(sizeof(struct Passeggero));
+        strcpy(head->cognome, cognome);
+        strcpy(head->nome, nome);
+        head->sesso = sesso;
+        head->attivita = 0;
+        head->next = NULL;
+        return head;
+    } else {
+        while (cur != NULL && cur->next != NULL) {
+        cur = cur->next;
+        }
+        
+        cur->next = malloc(sizeof(struct Passeggero));
+        cur = cur->next;
+    
+        strcpy(cur->cognome, cognome);
+        strcpy(cur->nome, nome);
+        cur->sesso = sesso;
+        cur->attivita = 0;
+        cur->next = NULL;
+    }
 
-    cur->next = malloc(sizeof(struct Passeggero));
-    cur = cur->next;
+    return head;
+}
 
-    strcpy(cur->cognome, cognome);
-    strcpy(cur->nome, nome);
-    cur->sesso = sesso;
-    cur->attivita = 0;
-    cur->next = NULL;
+struct Passeggero *cancellazione (struct Passeggero *head) {
+    struct Passeggero *cur = head;
+    char cognome[16];
 
-    return cur;
+    printf("Cognome: ");
+    scanf("%s", cognome);
+
+    if (strcmp(cognome, cur->cognome)==0&&cur==head) {
+        
+    } else { 
+        while (cur!=NULL) {
+            struct Passeggero *prec = cur
+            cur = cur->next
+            if (strcmp(cognome, cur->cognome)==0) {
+                prec = cur->next;
+                free(cur);
+            }
+        }
+    }
+
+    return head;
 }
 
 
@@ -96,7 +129,7 @@ int main () {
             scanf("%s", cur->nome);
             do {
                 printf("Sesso: ");
-                scanf(" %c", cur->sesso);
+                scanf(" %c", &cur->sesso);
             } while (cur->sesso!='M'&&cur->sesso!='F');
             cur->attivita=0;
         }
