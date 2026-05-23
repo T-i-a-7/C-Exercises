@@ -1,60 +1,85 @@
-# =========================
-# C / Compiled binaries
-# =========================
+# C build artifacts
 *.o
-*.out
-*.exe
-*.app
-*.dll
-*.so
+*.obj
+*.lo
 *.a
+*.lib
+*.so
+*.so.*
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
+*.i
+*.ii
+*.s
+*.d
 
-# =========================
-# Debug files
-# =========================
+# Exercise binaries generated with commands like: gcc Exercise-1.c -o Exercise-1
+**/Exercise-[0-9]
+**/Exercise-[0-9][0-9]
+**/Exercise-[0-9][0-9][0-9]
+
+# Debug, profiling, and crash files
 *.dSYM/
 *.gdb
-*.gdb_history
+.gdb_history
+*.pdb
+*.ilk
+*.gcda
+*.gcno
+*.gcov
+*.profraw
+*.profdata
 vgcore.*
 core
 core.*
 
-# =========================
-# Build directories
-# =========================
+# Build directories and generated build-system files
 build/
 bin/
 dist/
+out/
+Debug/
+Release/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+CTestTestfile.cmake
+DartConfiguration.tcl
+Testing/
 
-# =========================
-# Temporary / backup files
-# =========================
+# Temporary and backup files
 *~
 *.tmp
+*.temp
 *.swp
 *.swo
 *.bak
+*.orig
+*.rej
 
-# =========================
-# IDE / Editor files
-# =========================
-.vscode/
+# IDE and editor files
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+!.vscode/c_cpp_properties.json
+.idea/
+.vs/
+*.code-workspace
 
-# =========================
 # OS generated files
-# =========================
-*.desktop
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
 .Trash-*
-
-# =========================
-# CMake
-# =========================
-CMakeCache.txt
-CMakeFiles/
-Makefile
-cmake_install.cmake
-compile_commands.json
+*.desktop
