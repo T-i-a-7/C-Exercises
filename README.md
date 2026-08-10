@@ -1,16 +1,15 @@
-![Banner](Banner.png)
+![C Exercises - Archive banner](Banner.png)
 
 <h1 align="center">
    C Exercises - Archive
 </h1>
 
 <p align="center">
-   A collection of exercises in the C programming language.
+   A chronological archive of C programming exercises from my learning journey.
 </p>
 
 <p align="center">
    <img src="https://img.shields.io/badge/Exercises-70%2B-87D3F8" alt="Number of Exercises">
-   <img src="https://img.shields.io/badge/Difficulty-Medium-FFA500" alt="Difficulty Medium">
    <img src="https://img.shields.io/badge/Language-C-00599C" alt="Language C">
    <img src="https://img.shields.io/badge/License-MIT-green" alt="License MIT">
 </p>
@@ -36,10 +35,10 @@ C-Exercises/
 ├── 2024/
 ├── 2025/
 └── Extras/
-````
+```
 
 > [!TIP]
-> If you are new to C programming, it is recommended to start with the older exercises.
+> Older exercises generally cover more basic topics, while later ones tend to become progressively more complex.
 
 Where available, the original task, prompt, or problem statement is included as a comment in the corresponding `.c` file. The `Extras` directory contains additional exercises that do not belong to the main chronological structure.
 
