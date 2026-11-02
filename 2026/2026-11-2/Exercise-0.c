@@ -87,12 +87,10 @@ void print_array(int a[], int n) {
 }
 
 void reverse_in_place(int a[], int n) {
-	int tmp[n];
-    for (int i = 0; i < n; i++) {
-        tmp[i] = a[n-1-i];
-    }
-	for (int i = 0; i < n; i++) {
-        a[i] = tmp[i];
+    for (int i = 0; i < n/2; i++) {
+        int tmp = a[i];
+        a[i] = a[n-1-i];
+        a[n-1-i] = tmp;
     }
 }
 
